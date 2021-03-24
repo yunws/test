@@ -4,7 +4,6 @@ jobs:
   to_gitee:
     runs-on: ubuntu-latest
     steps:
-      - name: gitee
       - uses: actions/checkout@v1
       - uses: spyoungtech/mirror-action@master
         with:
