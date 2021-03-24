@@ -1,0 +1,13 @@
+name: push
+on: [push]
+jobs:
+  to_gitee:
+    runs-on: ubuntu-latest
+    steps:
+      - name: gitee
+      - uses: actions/checkout@v1
+      - uses: spyoungtech/mirror-action@master
+        with:
+          REMOTE: 'https://gitee.com/yunws/GWAC_obs_manage_system.git'
+          GIT_USERNAME: ${{ secrets.GIT_USER_NAME }}
+          GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
