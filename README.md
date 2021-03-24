@@ -1,2 +1,2 @@
 # GWAC_obs_manage_system
-测试完成
+gitee测试
