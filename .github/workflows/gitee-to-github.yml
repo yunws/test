@@ -1,6 +1,6 @@
 name: 'mirror'
 on:
-  push:
+  pull_request:
   schedule:
     # Run everyday at 3 AM UTC
     - cron: '*/15 * * * *'
